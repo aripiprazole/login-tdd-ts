@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "ES2018",
+        "emitDecoratorMetadata": true,
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": false,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "*": ["node_modules/*"],
+            "@app/*": ["src/*"],
+            "@controller/*": ["src/controllers/*"],
+            "@route/*": ["src/routing/route/*"],
+            "@middleware/*": ["src/routing/middleware/*"],
+            "@model/*": ["src/models/*"]
+        }
+    },
+    "exclude": ["node_modules", ".vscode", "dist"],
+    "include": ["src/**/*", "tests/**/*"]
+}
